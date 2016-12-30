@@ -1,0 +1,57 @@
+.icon {
+  cursor: pointer;
+  @include transition(all .3s ease);
+
+  &-menu {
+    position: relative;
+    top: 3px;
+    z-index: 15;
+    border: 0;
+    background: transparent;
+    padding: 0;
+
+    &:hover {
+      .icon-bar {
+        background: lighten($main-color, 10%);
+      }
+    }
+    .title {
+      font-family: $font-family;
+      position: absolute;
+      top: 2px;
+      right: 100%;
+      padding-right: 10px;
+      font-size: 12px;
+      font-weight: 700;
+      color: $main-color;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+
+      @include transition(all .3s ease);
+    }
+    .icon-bar {
+      display: block;
+      width: 30px;
+      height: 3px;
+      margin-bottom: 6px;
+      background: $main-color;
+      border-radius: 6px;
+
+      @include transition(all .3s ease);
+    }
+  }
+  &-cross {
+    max-width: 42px;
+    max-height: 30px;
+    color: #3C3C3C;
+
+    &:hover {
+      color: lighten(#3C3C3C, 10%);
+    }
+  }
+  &-eye {
+    max-width: 32px;
+    max-height: 32px;
+    margin-left: 10px;
+  }
+}

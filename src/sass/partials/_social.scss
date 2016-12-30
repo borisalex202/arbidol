@@ -1,0 +1,21 @@
+.social {
+  margin: 0 10% 0 auto;
+
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 12px;
+
+    a {
+      display: block;
+      background: #DADADA;
+      border-radius: 50%;
+      color: #fff;
+      width: 23px;
+      height: 23px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 23px;
+    }
+  }
+}

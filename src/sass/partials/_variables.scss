@@ -1,0 +1,47 @@
+/* Fonts */
+$font-family-sans-serif:  'Ubuntu', sans-serif;
+$font-family:             'Ubuntu', sans-serif;
+$font-family-second:      'PFDinDisplayPro', sans-serif;
+$font-size:               16px;
+
+/* Main */
+$container-tablet:             (720px + $grid-gutter-width) !default;
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:            (940px + $grid-gutter-width);
+//** For `$screen-md-min` and up.
+$container-md:                 $container-desktop ;
+
+// Large screen / wide desktop
+$container-large-desktop:      (1310px + $grid-gutter-width) ;
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop;
+
+$main-color:            #22478A;
+$secodn-color:          #B1C116;
+
+$text-color:            #333;
+$head-color:            #0b0b0b;
+
+$menu-color:            #EB5942;
+
+/* Links */
+$link-color:            #1f458c;
+$link-hover-color:      lighten($link-color, 15%);
+$link-hover-decoration: underline;
+
+/* Buttons */
+$btn-default-bg:        #9CAB14;
+$btn-default-bg-hover:  lighten($btn-default-bg, 10%);
+
+$btn-primary-bg:        #fff;
+$btn-primary-bg-hover:  darken($btn-primary-bg, 10%);
+
+// Widgets
+$widget-colors: (
+  white   : #fff,
+  green   : #D8E8E4,
+  blue    : #EAEFFA
+);

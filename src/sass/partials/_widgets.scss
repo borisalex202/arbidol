@@ -1,0 +1,39 @@
+.widget {
+
+
+  &.ind {
+    @for $ind from 10 through 150 {
+      @if $ind % 5 == 0 {
+        &-#{$ind} {
+          padding-top: $ind#{'px'};
+          padding-bottom: $ind#{'px'};
+
+          &-md {
+            @media screen and (min-width: $screen-md) {
+              padding-top: $ind#{'px'};
+              padding-bottom: $ind#{'px'};
+            }
+          }
+          &-sm {
+            @media screen and (max-width: $screen-sm-max) {
+              padding-top: $ind#{'px'};
+              padding-bottom: $ind#{'px'};
+            }
+          }
+          &-xs {
+            @media screen and (max-width: $screen-xs-max) {
+              padding-top: $ind#{'px'};
+              padding-bottom: $ind#{'px'};
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @each $widget, $color in $widget-colors {
+    &--#{$widget} {
+      background: $color;
+    }
+  }
+}

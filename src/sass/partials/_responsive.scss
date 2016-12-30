@@ -1,0 +1,151 @@
+@media screen and (min-width: 1440px) {
+  .main {
+    &-menu {
+      > ul {
+        max-width: 590px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1440px) {
+  .main {
+    &-menu {
+      padding-right: 20px;
+    }
+  }
+}
+@media screen and (min-width: $screen-md) {
+  .container {
+    width: 100%;
+    max-width: $container-lg;
+  }
+}
+@media screen and (max-width: $screen-sm-max) {
+  .icon {
+    &-menu {
+      margin: 0 0 0 auto;
+    }
+  }
+  .main {
+    &-menu {
+      width: 100%;
+      z-index: 9;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .site {
+    &-footer {
+      .footer-info {
+        @include flex-wrap(wrap);
+
+        .links {
+          text-align: left;
+          margin: 0;
+
+          li {
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .contraindications {
+        span {
+          font-size: 1.7vw;
+
+          .icon {
+            max-width: 20px;
+            max-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $screen-xs-max) {
+  .breadcrumbs {
+    display: none;
+  }
+  .social {
+    display: none;
+  }
+  .site {
+    &-footer {
+      .wrap {
+        position: relative;
+        padding-bottom: 40px;
+      }
+      .footer-info {
+        .links {
+          text-align: left;
+          margin: 0;
+          position: absolute;
+          bottom: 10px;
+          left: 0;
+          right: 0;
+
+          li {
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+      .contraindications {
+        height: 120px;
+
+        span {
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $screen-xs) {
+  .site {
+    &-footer {
+      .contraindications {
+        height: 100px;
+
+        span {
+          top: 50px;
+          font-size: 4vw;
+          line-height: 5px;
+
+          .icon {
+            top: -10px;
+            max-width: 20px;
+            max-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .site {
+    &-footer {
+      .contraindications {
+        height: 100px;
+
+        span {
+          top: 50px;
+          font-size: 3.5vw;
+          line-height: 0px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 370px) {
+  .site {
+    &-footer {
+      .wrap {
+        position: relative;
+        padding-bottom: 50px;
+      }
+      .footer-info {
+        .links {
+          bottom: 0;
+        }
+      }
+    }
+  }
+}

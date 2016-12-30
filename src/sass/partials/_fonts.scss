@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+
+@font-face {
+  font-family: 'PFDinDisplayPro';
+  font-style: normal;
+  font-weight: 200;
+  src: local('PFDinDisplayPro XThin'), local('PFDinDisplayPro-XThin'), url('../fonts/pfdindisplaypro-xthin.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'PFDinDisplayPro';  
+  font-style: normal;
+  font-weight: 300;
+  src: local('PFDinDisplayPro Light'), local('PFDinDisplayPro-Light'), url('../fonts/pfdindisplaypro-thin.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'PFDinDisplayPro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PFDinDisplayPro'), url('../fonts/pfdindisplaypro-reg.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'PFDinDisplayPro';
+  font-style: normal;
+  font-weight: 500;
+  src: local('PFDinDisplayPro Medium'), local('PFDinDisplayPro-Medium'), url('../fonts/pfdindisplaypro-med.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'PFDinDisplayPro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('PFDinDisplayPro Bold'), local('PFDinDisplayPro-Bold'), url('../fonts/pfdindisplaypro-bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'PFDinDisplayPro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PFDinDisplayPro Black'), local('PFDinDisplayPro-Black'), url('../fonts/pfdindisplaypro-black.ttf') format('truetype');
+}

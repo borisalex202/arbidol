@@ -1,0 +1,48 @@
+.breadcrumbs {
+  margin: 0 0 0 10%;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    background: url('../img/svg/arrow-right.svg') no-repeat;
+    background-size: cover;
+    margin-right: 15px;
+  }
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    color: #9a9b9d;
+    font-size: 14px;
+    font-weight: 500;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 15px 0 20px;
+      width: 1px;
+      height: 20px;
+      background: #DADADA;
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+    a {
+      color: #9a9b9d;
+      font-size: 14px;
+      font-weight: 500;
+      border-bottom: 1px solid;
+
+      &:hover {
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+}
