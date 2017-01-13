@@ -5,10 +5,12 @@
   &-menu {
     position: relative;
     top: 3px;
+    left: 10px;
     z-index: 15;
     border: 0;
     background: transparent;
     padding: 0;
+    min-width: 40px;
 
     &:hover {
       .icon-bar {
@@ -20,7 +22,7 @@
       position: absolute;
       top: 2px;
       right: 100%;
-      padding-right: 10px;
+      padding-right: 15px;
       font-size: 12px;
       font-weight: 700;
       color: $main-color;
@@ -50,8 +52,28 @@
     }
   }
   &-eye {
-    max-width: 32px;
-    max-height: 32px;
+    max-width: 25px;
+    max-height: 25px;
     margin-left: 10px;
+  }
+  &-quote {
+    max-width: 100px;
+    max-height: 74px;
+    color: #fff;
+  }
+  &-pdf {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    padding: 0px 2px;
+    border: 2px solid $main-color;
+    color: $main-color;
+    border-radius: 5px;
+    margin: 0 7px 0 0;
+  }
+  &-search {
+    max-width: 30px;
+    max-height: 30px;
   }
 }

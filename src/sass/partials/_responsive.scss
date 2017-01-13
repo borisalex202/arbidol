@@ -1,16 +1,54 @@
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
   .main {
     &-menu {
+      max-width: 30%;
+      padding-right: 30px;
+
       > ul {
-        max-width: 590px;
+        max-width: 100%;
       }
     }
   }
+  .icon-menu {
+    z-index: 1;
+  }
+  .icon-menu-hd {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    left: inherit;
+  }
 }
 @media screen and (max-width: 1440px) {
+  .icon-menu-hd {
+    display: none;
+  }
   .main {
     &-menu {
-      padding-right: 20px;
+      padding-right: 15px;
+      padding-left: 15px;
+
+      > ul {
+        max-width: 610px;
+      }
+    }
+  }
+  .search-block {
+    left: 15px;
+  }
+}
+@media screen and (max-width: $screen-lg) {
+  .product {
+    &-description {
+      .thumbnail {
+        position: absolute;
+        top: 15%;
+        right: 5%;
+        margin-bottom: 25px;
+      }
+      .desc {
+        max-width: 40%;
+      }
     }
   }
 }
@@ -21,9 +59,19 @@
   }
 }
 @media screen and (max-width: $screen-sm-max) {
+  .breadcrumbs {
+    display: none;
+  }
   .icon {
     &-menu {
       margin: 0 0 0 auto;
+    }
+  }
+  .main {
+    &-menu {
+      > ul {
+        max-width: 100%;
+      }
     }
   }
   .main {
@@ -42,31 +90,75 @@
         .links {
           text-align: left;
           margin: 0;
+          @include flexbox();
+          @include justify-content(space-between);
 
           li {
             margin: 0 20px 0 0;
           }
         }
       }
-      .contraindications {
-        span {
-          font-size: 1.7vw;
-
-          .icon {
-            max-width: 20px;
-            max-height: 20px;
+    }
+  }
+  .product {
+    &-description {
+      .thumbnail {
+        position: static;
+      }
+      .desc {
+        position: static;
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+  }
+  .grid {
+    &-block {
+      &:nth-child(odd){
+        .answer-block {
+          &.bottom-left {
+            right: calc(-100% - 2.5px);
           }
+        }
+      }
+      &:nth-child(odd){
+        .answer-block {
+          &.bottom-right {
+            left: 0;
+          }
+        }
+      }
+    }
+    &-qa {
+      .answer-block {
+        width: calc(200% + 4px);
+
+        &.bottom-right {
+          top: -1.5px;
+          left: calc(-100% - 2.5px);
+        }
+        &.bottom-left {
+          top: -1.5px;
+          right: -1px;
+        }
+        .title {
+          padding-right: 0;
+          word-break: break-word;
         }
       }
     }
   }
 }
 @media screen and (max-width: $screen-xs-max) {
-  .breadcrumbs {
-    display: none;
-  }
   .social {
     display: none;
+  }
+  .info {
+    &.info-big {
+      p {
+        max-width: 100%;
+      }
+    }
   }
   .site {
     &-footer {
@@ -89,50 +181,75 @@
         }
       }
       .contraindications {
-        height: 120px;
+        height: 110px;
+        margin-bottom: 10px;
 
+        .text {
+          @include scale(1,20);
+        }
         span {
-          line-height: 20px;
+          .icon {
+            max-width: 30px;
+            max-height: 30px;
+            top: 25px;
+          }
+        }
+      }
+    }
+  }
+  .grid {
+    &-block {
+      &:nth-child(odd){
+        .answer-block {
+          &.bottom-left {
+            right: 1.5px;
+          }
+        }
+      }
+      &:nth-child(even){
+        .answer-block {
+          &.bottom-right {
+            left: -v1.5px;
+          }
+        }
+      }
+    }
+    &-q {
+      &.question {
+        .answer-block {
+          width: calc(100% - 3px) !important;
+        }
+      }
+    }
+    &-qa {
+      .answer-block {
+        width: 100%;
+        height: auto;
+        min-height: 100%;
+
+        &.bottom-right {
+          top: 0;
+          left: -1.5px;
+        }
+        &.bottom-left {
+          top: 0;
+          right: 1.5px;
+        }
+        .icon-cross {
+          right: 10px;
+        }
+        .title {
+          padding-right: 10%;
         }
       }
     }
   }
 }
 @media screen and (max-width: $screen-xs) {
-  .site {
-    &-footer {
-      .contraindications {
-        height: 100px;
 
-        span {
-          top: 50px;
-          font-size: 4vw;
-          line-height: 5px;
-
-          .icon {
-            top: -10px;
-            max-width: 20px;
-            max-height: 20px;
-          }
-        }
-      }
-    }
-  }
 }
 @media screen and (max-width: 400px) {
-  .site {
-    &-footer {
-      .contraindications {
-        height: 100px;
 
-        span {
-          top: 50px;
-          font-size: 3.5vw;
-          line-height: 0px;
-        }
-      }
-    }
-  }
 }
 @media screen and (max-width: 370px) {
   .site {

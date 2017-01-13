@@ -142,6 +142,15 @@ a {
   &-italic {
     font-style: italic;
   }
+  &-medium {
+    font-weight: 500;
+
+    &-tablet {
+      @media screen and (max-width: $screen-sm-max) {
+        font-weight: 500;
+      }
+    }
+  }
   &-semibold {
     font-weight: 600;
 
@@ -183,6 +192,13 @@ a {
       }
     }
   }
+  &-center {
+    &-xs {
+      @media screen and (max-width: $screen-xs-max) {
+        text-align: center;
+      }
+    }
+  }
   &-white {
     color: #fff;
   }
@@ -216,7 +232,7 @@ a {
     @include flex-direction(row-reverse);
     @include flex-wrap(wrap-reverse);
 
-    &-tablet {
+    &-sm {
       @media screen and (max-width: $screen-sm-max) {
         display: inline-flex;
         @include flex-direction(row-reverse);
@@ -231,6 +247,13 @@ a {
   &-tablet {
     @media screen and (max-width: $screen-sm-max) {
       @include flex-wrap(wrap);
+    }
+  }
+  &.flex-swap {
+    &-sm {
+      @media screen and (max-width: $screen-sm-max) {
+        @include flex-wrap(wrap-reverse);
+      }
     }
   }
 }

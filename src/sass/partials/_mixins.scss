@@ -403,10 +403,14 @@
     filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='#{$px}');
 }
 
-
 @mixin placeholder {
   &::-webkit-input-placeholder {@content;}
   &:-moz-placeholder           {@content;}
   &::-moz-placeholder          {@content;}
   &:-ms-input-placeholder      {@content;}
+}
+
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
 }
