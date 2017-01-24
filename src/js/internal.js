@@ -70,6 +70,9 @@
     }
     search_tap = 1;
   });
+  $('.icon-eye').on('click', function(){
+    $('.site-footer').addClass('hide-text');
+  });
 
   function scrollbarWidth() {
     var documentWidth = parseInt(document.documentElement.clientWidth);

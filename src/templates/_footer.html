@@ -13,47 +13,58 @@
                   </div>
                 </div>
                 <!-- <p class="contraindications hidden-sm hidden-lg hidden-md"><span>Имеются противопоказания. Необходимо проконсультироваться со специалистом <svg class="icon icon-eye"><use xlink:href="#icon-eye"></use></svg></span></p> -->
-                <p class="contraindications"><span>
-                  <svg class="text" width="100%" height="80px" version="1.1" viewBox="0 0 100 100"
-                      preserveAspectRatio="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <style>
-                        .text-info {
-                          font-family: $font-family-second;
-                          font-weight: 300;
-                          color: #9a9b9d;
-                          opacity: .8;
-                        }
-                        .text-mobile {
-                          display: none;
-                        }
-                        @media screen and (max-width: 991px) {
+                <p class="contraindications">
+                  <span class="border-line">
+                  <span class="text-line">
+                    <svg class="text" width="100%" height="80px" version="1.1" viewBox="0 0 100 100"
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <style>
                           .text-info {
-                            font-size: 2.3px;
-                          }
-                        }
-                        @media screen and (max-width: 767px) {
-                          .text-info {
-                            font-size: 4.2px;
-                          }
-                          .text-desktop {
-                            display: none;
+                            font-family: $font-family-second;
+                            font-weight: 300;
+                            color: #9a9b9d;
+                            opacity: .8;
                           }
                           .text-mobile {
-                            display: block;
+                            display: none;
                           }
-                        }
-                        @media screen and (max-width: 480px) {
-                          .text-info {
-                            font-size: 3.7px;
+                          @media screen and (max-width: 991px) {
+                            .text-info {
+                              font-size: 2.3px;
+                            }
                           }
-                        }
-                      </style>
-                      <text x="0" y="50" class="text-info text-desktop" font-size="2.4">Имеются противопоказания. Необходимо проконсультироваться со специалистом</text>
-                      <text x="0" y="50" class="text-info text-mobile" font-size="2.4">Имеются противопоказания. Необходимо</text>
-                      <text x="0" y="54" class="text-info text-mobile" font-size="2.4">проконсультироваться со специалистом</text>
-                  </svg>
-                  <svg class="icon icon-eye"><use xlink:href="#icon-eye"></use></svg></span></p>
+                          @media screen and (max-width: 767px) {
+                            .text-info {
+                              font-size: 4.5px;
+                            }
+                            .text-desktop {
+                              display: none;
+                            }
+                            .text-mobile {
+                              display: block;
+                            }
+                          }
+                          @media screen and (max-width: 480px) {
+                            .text-info {
+                              font-size: 4.3px;
+                            }
+                          }
+                          @media screen and (max-width: 380px) {
+                            .text-info {
+                              font-size: 4.0px;
+                            }
+                          }
+                        </style>
+                        <text x="0" y="50" class="text-info text-desktop" font-size="2.4">Имеются противопоказания. Необходимо проконсультироваться со специалистом</text>
+                        <text x="0" y="50" class="text-info text-mobile" font-size="2.4">Имеются противопоказания. Необходимо</text>
+                        <text x="0" y="54" class="text-info text-mobile" font-size="2.4">проконсультироваться со специалистом</text>
+                    </svg>
+                    <svg class="icon icon-eye"><use xlink:href="#icon-eye"></use></svg>
+                    <span class="info">С информацие ознакомплен(а), скрыть</span>
+                  </span>
+                  </span>
+                </p>
               </div>
             </footer>
 

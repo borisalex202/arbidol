@@ -77,7 +77,7 @@
   .main {
     &-menu {
       width: 100%;
-      z-index: 9;
+      z-index: 19;
       padding-left: 15px;
       padding-right: 15px;
     }
@@ -96,6 +96,11 @@
           li {
             margin: 0 20px 0 0;
           }
+        }
+      }
+      .contraindications {
+        .text-line {
+          max-width: 750px;
         }
       }
     }
@@ -162,6 +167,8 @@
   }
   .site {
     &-footer {
+      padding-bottom: 120px;
+
       .wrap {
         position: relative;
         padding-bottom: 40px;
@@ -181,11 +188,19 @@
         }
       }
       .contraindications {
-        height: 110px;
-        margin-bottom: 10px;
+        height: 120px;
 
+        .border-line {
+          height: 155px;
+        }
         .text {
-          @include scale(1,20);
+          @include scale(1,17);
+        }
+        .text-line {
+          .icon-eye {
+            top: 25px;
+            right: 25px;
+          }
         }
         span {
           .icon {
@@ -249,7 +264,17 @@
 
 }
 @media screen and (max-width: 400px) {
+  .site {
+    &-footer {
+      .contraindications {
+        height: 120px;
 
+        .text {
+          @include scale(1,15);
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 370px) {
   .site {
