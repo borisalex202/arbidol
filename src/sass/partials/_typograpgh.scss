@@ -63,6 +63,19 @@ select {
 }
 textarea {
   resize: none;
+
+  &.form-control {
+    background: url('../img/textarea-bg.png');
+    border-bottom: 0;
+    height: 220px;
+    line-height: 54px;
+    position: relative;
+    top: -20px;
+
+    &:focus {
+      border-bottom: 0;
+    }
+  }
 }
 hr {
   &.tablet {

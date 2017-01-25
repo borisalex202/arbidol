@@ -20,7 +20,7 @@ $container-large-desktop:      (1310px + $grid-gutter-width) ;
 $container-lg:                 $container-large-desktop;
 
 $main-color:            #22478A;
-$secodn-color:          #B1C116;
+$secodn-color:          #fff;
 
 $text-color:            #333;
 $head-color:            #0b0b0b;
@@ -33,7 +33,7 @@ $link-hover-color:      lighten($link-color, 15%);
 $link-hover-decoration: underline;
 
 /* Buttons */
-$btn-default-bg:        #9CAB14;
+$btn-default-bg:        #fff;
 $btn-default-bg-hover:  lighten($btn-default-bg, 10%);
 
 $btn-primary-bg:        #fff;

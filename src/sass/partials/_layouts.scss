@@ -517,12 +517,24 @@
       }
       &.question {
         .answer-block {
+          background: $main-color;
           width: calc(200% + 0.5px);
           height: calc(200% - 1px);
 
           &.bottom-right {
             top: 0;
             left: 0;
+          }
+          .title {
+            color: #fff;
+            border-bottom: 1px solid #3f5ea8;
+            margin-bottom: 45px;
+          }
+          .icon-cross {
+            color: #fff;
+          }
+          .btn {
+            margin-top: 20px;
           }
         }
       }
@@ -535,7 +547,7 @@
       height: calc(200% + 3px);
       padding: 40px 30px;
       border: 1px solid $main-color;
-      z-index: 3;
+      z-index: 13;
       pointer-events: none;
       overflow: auto;
       @include opacity(0);
@@ -691,5 +703,33 @@
     top: -2px;
     left: -3%;
     @include transition(all .4s ease);
+  }
+}
+.form {
+  &-control {
+    margin-bottom: 30px;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    border-radius: 0;
+    background: $main-color;
+    padding: 10px 0;
+    font-family: $font-family-second;
+    font-size: 18px;
+
+    @include placeholder{
+      color: #fff;
+      font-family: $font-family-second;
+      font-size: 18px;
+    };
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border: 0;
+      border-bottom: 1px solid #fff;
+    }
+    &.max-50 {
+      max-width: 50%;
+    }
   }
 }

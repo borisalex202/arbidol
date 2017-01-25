@@ -135,6 +135,14 @@
       }
     }
     &-qa {
+      .grid-q {
+        &.question {
+          .answer-block {
+            min-height: calc(200% - 1px);
+            height: auto;
+          }
+        }
+      }
       .answer-block {
         width: calc(200% + 4px);
 
@@ -150,6 +158,13 @@
           padding-right: 0;
           word-break: break-word;
         }
+      }
+    }
+  }
+  .form {
+    &-control {
+      &.max-50 {
+        max-width: 100%;
       }
     }
   }
