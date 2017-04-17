@@ -660,49 +660,78 @@
     text-decoration: underline;
   }
 }
-.search-block {
-  max-width: 45%;
-  width: 100%;
-  position: absolute;
-  top: 30px;
-  left: 30px;
+.search{
+  &-item {
+    padding: 50px 0;
+    border-top: 1px solid #DADADA;
 
-  &.active {
+    &:last-child {
+      padding-bottom: 0;
+    }
+    .title {
+      display: block;
+      font-size: 24px !important;
+      line-height: 31px;
+      font-family: $font-family-second;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 15px !important;
+      max-width: 75%;
+      color: #000;
+
+      &:hover {
+        color: $main-color;
+      }
+    }
+    .desc {
+      max-width: 75%;
+      margin: 0;
+    }
+  }
+  &-block {
+    max-width: 45%;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+    &.active {
+      input {
+        width: 100%;
+        @include opacity(1);
+      }
+      .btn-search {
+        left: 100%;
+      }
+    }
     input {
-      width: 100%;
-      @include opacity(1);
+      border: 0;
+      background: transparent;
+      border-bottom: 1px solid #fff;
+      padding: 2px;
+      color: #fff;
+      width: 0%;
+      font-size: 14px;
+
+      @include transition(all .4s ease);
+      @include opacity(0);
+      @include placeholder{
+        color: #fff;
+        font-size: 14px;
+      };
+    }
+    .icon-search {
+      color: #fff;
     }
     .btn-search {
-      left: 100%;
+      background: transparent;
+      border: 0;
+      padding: 0;
+      position: absolute;
+      top: -2px;
+      left: -3%;
+      @include transition(all .4s ease);
     }
-  }
-  input {
-    border: 0;
-    background: transparent;
-    border-bottom: 1px solid #fff;
-    padding: 2px;
-    color: #fff;
-    width: 0%;
-    font-size: 14px;
-
-    @include transition(all .4s ease);
-    @include opacity(0);
-    @include placeholder{
-      color: #fff;
-      font-size: 14px;
-    };
-  }
-  .icon-search {
-    color: #fff;
-  }
-  .btn-search {
-    background: transparent;
-    border: 0;
-    padding: 0;
-    position: absolute;
-    top: -2px;
-    left: -3%;
-    @include transition(all .4s ease);
   }
 }
 .form {

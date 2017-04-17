@@ -82,6 +82,14 @@
       padding-right: 15px;
     }
   }
+  .search{
+    &-item {
+      .title,
+      .desc {
+        max-width: 100%;
+      }
+    }
+  }
   .site {
     &-footer {
       .footer-info {
