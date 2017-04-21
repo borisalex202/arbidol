@@ -44,8 +44,13 @@
       gaBlock = $('.answer-block');
 
   gqBlock.on('click', function(e){
-    e.preventDefault();
-  })
+      e.preventDefault();
+      var posTop = $(this).find(gaBlock).offset();
+
+      $('html, body').animate({
+          scrollTop: posTop.top
+      }, 500);
+  });
   gqBlock.find('.content').on('click', function(e){
     gqBlock.not($(this).closest('.grid-q')).removeClass('active');
     $(this).closest('.grid-q').toggleClass('active');

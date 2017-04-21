@@ -538,6 +538,31 @@
           }
         }
       }
+
+      &:last-child,
+      &:nth-last-child(2),
+      &:nth-last-child(3),
+      &:nth-last-child(4) {
+        .answer-block {
+          top: calc(-100% - 2px);
+        }
+      }
+      @media (max-width: $screen-sm-max) {
+        &:nth-last-child(3),
+        &:nth-last-child(4) {
+          .answer-block {
+            top: -1px;
+          }
+        }
+      }
+      @media (max-width: $screen-xs-max) {
+        &:last-child,
+        &:nth-last-child(2) {
+          .answer-block {
+            top: -1px;
+          }
+        }
+      }
     }
     .answer-block {
       cursor: default;
